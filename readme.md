@@ -1,1 +1,1 @@
-Repositório destinaod ao estudo de SASS, um pré-processador CSS
+Repositório destinado ao estudo de SASS, um pré-processador CSS
