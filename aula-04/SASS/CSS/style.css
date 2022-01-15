@@ -1,0 +1,48 @@
+#conteudo {
+  background: #6b026b;
+  padding: 15px;
+}
+
+#conteudo h1 {
+  color: #fff;
+}
+
+#conteudo .caixas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#conteudo .caixas .caixa {
+  background-color: #ff0;
+  padding: 50px;
+  margin: 10px;
+  border-radius: 50px;
+  border: 3px solid #007e7e;
+}
+
+#conteudo .caixas #bola-especial {
+  background-color: #ff0;
+}
+
+#conteudo h2 {
+  color: red;
+}
+
+#conteudo a {
+  color: #007e7e;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#conteudo a:hover {
+  color: #ff0;
+  background: #7200cf;
+}
+
+#conteudo .red {
+  color: red;
+  background: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */

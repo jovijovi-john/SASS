@@ -1,0 +1,63 @@
+/* Variáveis */
+$bg: #6b026b;
+$primary_color: #ff0000;
+$title_primary: #fff;
+$link: #00ffff;
+$hover_link: #ffff00;
+$bg_link_hover: #7200cf;
+$tamanho-titulo: 20px;
+
+/* Aninhamento */
+#conteudo {
+    background: $bg;
+    padding: 15px;
+    
+    h1{
+        color: $title_primary;
+    }
+
+    .caixas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        $link: #007e7e !global;
+        
+        .caixa {
+            background-color: $hover_link;
+            padding: 50px;
+            margin: 10px;
+            border-radius: 50px;
+            border: 3px solid $link;
+        }
+        
+        #bola-especial {
+            background-color: $hover_link;
+        }
+    }
+
+    h2 {
+        color: $primary_color;
+    }
+
+    /* Seletor pai */
+    a {
+        color: $link;
+        padding: 10px;
+        border-radius: 10px;
+    
+        &:hover {
+            color: $hover_link;
+            background: $bg_link_hover;
+        }
+    }
+
+    // interpolação
+
+    $classe: red;
+    $color: color;
+
+    .#{$classe} {
+        #{$color}: $classe;
+        background: $title_primary;
+    }
+}
