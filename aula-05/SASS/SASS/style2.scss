@@ -1,0 +1,8 @@
+@import "_variaveis.scss";
+
+@for $cont from 1 through 3 {
+    .item-#{$cont} {
+        background: $cor_principal;
+        margin-bottom: 2px;
+    }
+}

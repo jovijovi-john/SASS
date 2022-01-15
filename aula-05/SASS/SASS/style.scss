@@ -1,0 +1,48 @@
+// for 
+// through: de 1 ate 3 inclusive o 3
+// to: de 1 ate 3, mas nao o inclui o 3
+
+$lista: green, red, yellow;
+
+$cont: 1;
+@each $cor in $lista {
+
+    .item-#{$cont} {
+        background: $cor;
+        margin-bottom: 2px;
+    }
+
+    $cont: $cont + 1;
+}
+
+
+$total : 12;
+
+@function largura-coluna($coluna) {
+    @return percentage($coluna/$total);
+}
+
+@for $cont from 1 through $total {
+    .col-#{$cont} {
+        width: largura-coluna($cont);
+    }
+}
+
+.alerta {
+    border: solid;
+    border-width: 5px;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, mix(red, blue, 30%), mix(red, blue, 60%));
+    
+    background-color: darken(rgb(23, 0, 233), 38);
+    color: white;
+    padding: 50px;
+    margin-bottom: 20px;
+
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+$resultado: largura-coluna(12);

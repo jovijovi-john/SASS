@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAGI,AAAA,OAAO,CAAQ;EACX,UAAU,ECJF,OAAe;EDKvB,aAAa,EAAE,GAAG;CACrB;;AAHD,AAAA,OAAO,CAAQ;EACX,UAAU,ECJF,OAAe;EDKvB,aAAa,EAAE,GAAG;CACrB;;AAHD,AAAA,OAAO,CAAQ;EACX,UAAU,ECJF,OAAe;EDKvB,aAAa,EAAE,GAAG;CACrB",
+    "sources": [
+        "style2.scss",
+        "_variaveis.scss"
+    ],
+    "names": [],
+    "file": "style2.css"
+}
