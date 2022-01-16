@@ -1,0 +1,38 @@
+h1 {
+  margin-bottom: 10px;
+  padding: 10px 5px;
+  color: #ffffff;
+  background: black;
+  border: 1px solid #ffffff;
+}
+
+h2 {
+  padding: 10px 5px;
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid #000000;
+}
+
+.vermelho {
+  color: red;
+}
+
+.vermelho {
+  background: black;
+}
+
+.vermelho {
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Diretivas de Controle */
+body {
+  background: black;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.css.map */

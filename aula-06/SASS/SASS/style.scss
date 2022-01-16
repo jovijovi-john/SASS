@@ -1,0 +1,83 @@
+@mixin titulo($cor: red, $cor-bg: black) {
+    padding: 10px 5px;
+    color: $cor;
+    background: $cor-bg;
+    border: 1px solid $cor;
+}
+
+h1 {
+    margin-bottom: 10px;
+    @include titulo(#ffffff);
+}
+
+h2 {
+    @include titulo(#000000, #ffffff);
+}
+
+%classe-1 {
+    color: red;
+}
+
+%classe-2 {
+    background: black;
+}
+
+.vermelho{
+    @extend %classe-1;
+    @extend %classe-2;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px;
+}
+
+%pai {
+    color: rgb(0, 195, 255);
+    border: 3px solid  rgb(0, 195, 255);;
+}
+
+%filho {
+    @extend %pai;
+    background: black;
+}
+
+// .erro{ 
+//     @extend %filho;
+//     font-weight: bold;
+//     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+//     padding: 20px;
+// }
+
+/* Diretivas de Controle */
+
+// $cor: green;
+// @if ($cor == green) {
+//     p {
+//         color: $cor;
+//     }
+// }@else if ($cor == red){
+//     p {
+//         color: $cor;
+//     }
+// }@else {
+//     p {
+//         color: black;
+//     }
+// }
+
+@mixin tema($tema: default) {
+
+    @if ($tema == natal) {
+        background: red;
+        color: white;
+    } @else if($tema == blackfriday) {
+        background: black;
+        color: white;
+    } @else {
+        background: white;
+        color: black;
+    }
+}
+
+body {
+    @include tema(blackfriday);
+}
